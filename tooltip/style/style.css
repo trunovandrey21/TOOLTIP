@@ -1,0 +1,32 @@
+button{
+    background: rgb(228, 78, 9);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    margin-top: 100px;
+    margin-left: 100px;
+    padding: 15px 40px;
+}
+.tooltip{
+    position: absolute;
+    background-color: gray;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    padding: 4px 8px;
+
+}
+.tooltip::after{
+    content:""; 
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid black;
+
+
+}
